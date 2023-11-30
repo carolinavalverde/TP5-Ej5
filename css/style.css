@@ -71,6 +71,40 @@ main {
   height: 4.5rem;
 }
 
+.pulseBoton {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.pulseBoton:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+.botonIniciar {
+  background-color: rgb(96, 96, 245);
+  color: white;
+}
+
+.botonPusar {
+  background-color: rgb(249, 92, 40);
+  color: white;
+}
+
+.botonReiniciar {
+  background-color: rgb(77, 147, 64);
+  color: white;
+}
+
 @media screen and (max-width: 575.9px) {
   .tituloReloj {
     font-size: 0.8rem;
@@ -89,7 +123,7 @@ main {
     height: 5%;
   }
 
-  .textoCardSm{
+  .textoCardSm {
     font-size: 0.4rem;
   }
 }
@@ -113,5 +147,3 @@ main {
     height: 4.2rem;
   }
 }
-
-
