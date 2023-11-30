@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@font-face {
+  font-family: "DS Digital";
+  src: url("../fonts/DS-DIGIB.TTF") format("truetype");
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.relojEstilo {
+  background-image: linear-gradient(
+    43deg,
+    #f0ac40 0%,
+    #f7ea91 17%,
+    #d2d66c 39%,
+    #58e4a8 60%,
+    #74b7e6 80%,
+    #b48ed8 100%
+  );
+  border: 6px solid orange;
+}
+
+.containerPrincipal {
+  background-color: black;
+  border: 6px solid orange;
+  color: orange;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.containerReloj {
+  font-family: "DS Digital", sans-serif;
+  color: orange;
+  text-align: center;
+}
+
+.tituloReloj {
+  color: orange;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+}
+
+.horaEstilo {
+  font-size: 4.5rem;
+}
+
+.fechaEstilo {
+  margin-top: 10px;
+  font-size: 3.5rem;
+}
+
+.cardEstilo {
+  background-color: black;
+  border: 4px solid orange;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.5rem;
+  color: orange;
+  text-align: center;
+  width: 5.5rem;
+  height: 4.5rem;
+}
+
+@media screen and (max-width: 575.9px) {
+  .tituloReloj {
+    font-size: 0.8rem;
+  }
+
+  .horaEstilo {
+    font-size: 2rem;
+  }
+
+  .fechaEstilo {
+    font-size: 1.3rem;
+  }
+
+  .cardEstilo {
+    width: 15%;
+    height: 5%;
+  }
+
+  .textoCardSm{
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.9px) {
+  .tituloReloj {
+    font-size: 1rem;
+  }
+
+  .horaEstilo {
+    font-size: 4rem;
+  }
+
+  .fechaEstilo {
+    font-size: 3rem;
+  }
+
+  .cardEstilo {
+    font-size: 0.3rem;
+    width: 5.5rem;
+    height: 4.2rem;
+  }
+}
+
+
